@@ -1,0 +1,15 @@
+body {
+	max-height: 800px;
+}
+li {
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	width: 80%;
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow:    ellipsis;
+	margin: 0 0 20px;
+	user-select: none;
+}

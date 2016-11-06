@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Akira Matsuda</string>
+	<key>Builder Version</key>
+	<string>11602.1.50.0.10</string>
+	<key>CFBundleDisplayName</key>
+	<string>TabSearch</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.akira.matsuda.tabsearch</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Global Page</key>
+		<string>index.html</string>
+		<key>Popovers</key>
+		<array>
+			<dict>
+				<key>Filename</key>
+				<string>index.html</string>
+				<key>Identifier</key>
+				<string>search_tab_popover</string>
+				<key>Width</key>
+				<integer>400</integer>
+			</dict>
+		</array>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Identifier</key>
+				<string>search_tab</string>
+				<key>Image</key>
+				<string>icon.png</string>
+				<key>Include By Default</key>
+				<true/>
+				<key>Label</key>
+				<string>Search Tab</string>
+				<key>Palette Label</key>
+				<string>Search Tab</string>
+				<key>Popover</key>
+				<string>search_tab_popover</string>
+				<key>Tool Tip</key>
+				<string>Type a tab title</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Description</key>
+	<string>Search in title for tabs.</string>
+	<key>DeveloperIdentifier</key>
+	<string>3VC35JGS33</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="./scripts/css/bootstrap.min.css" rel="stylesheet">
+		<link href="./scripts/css/tab_search.css" rel="stylesheet">
+		<title>Search tab</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<form action="#">
+					<input type="search" name="search_field" placeholder="Filter" value="" id="id_search" class="form-control"/>
+				</form>
+				<ul class="list-group" id="list">
+					<div id="tab_title"></div>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="./scripts/js/jquery-3.1.1.min.js"></script>
+	<script src="./scripts/js/jquery.searcher.min.js"></script>
+	<script src="./scripts/js/bootstrap.min.js"></script>
+	<script src="./scripts/src/search.js"></script>
+	<script>
+	$(function () {
+		$("input").on("keydown", function(e) {
+            if ((e.which && e.which === 13) || (e.keyCode && e.keyCode === 13)) {
+                return false;
+            } else {
+                return true;
+            }
+        });
+        $("#id_search").keyup(function() {
+			update_size();
+		});
+		$("#list").searcher({
+			itemSelector: "li",
+			textSelector:  "", // the text is within the item element (li) itself
+			inputSelector: "#id_search"
+		});
+	});
+	</script>
+</html>
